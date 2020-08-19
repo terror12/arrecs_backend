@@ -19,3 +19,15 @@ class Recipe(models.Model):
     
     def __str__(self):
         return "Recipe for {}".format(self.name)
+
+class Lineup(models.Model):
+
+    player = models.CharField(default='player', max_length=1000)
+    team = models.CharField(default='team', max_length=1000)
+    position = models.CharField(default='position', max_length=1000)
+    projection = models.CharField(default='projection', max_length=1000)
+    salary = models.CharField(default='salary', max_length=1000)
+    std = models.CharField(default='std' , max_length=1000)
+    
+    def __str__(self):
+        return "Lineup for {}".format(self.player)
