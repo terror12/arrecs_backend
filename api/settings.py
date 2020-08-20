@@ -82,6 +82,16 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+DATABASES = {
+    'postgresql-flat-24567': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6r2ijclhv9vpt',                      
+        'USER': 'sagmjrlksvfryc',
+        'PASSWORD': '9a56ac86db5b0cf924374ef19de0c5578cb231a3ee8cf3cd826ffa97b9c885bd',
+        'HOST': 'ec2-52-202-66-191.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 DATABASES = {
     'default': {
