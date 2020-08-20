@@ -5,8 +5,8 @@ from .views import RecipeViewSet, PlatinumLineupViewSet, SilverLineupViewSet
 
 router = DefaultRouter()
 router.register(r'recipes', RecipeViewSet)
-router.register(r'lineups', PlatinumLineupViewSet)
-router.register(r'lineups', SilverLineupViewSet)
+router.register(r'platinumlineup', PlatinumLineupViewSet)
+router.register(r'silverlineup', SilverLineupViewSet)
 
 urlpatterns = [
     path("", include(router.urls))
