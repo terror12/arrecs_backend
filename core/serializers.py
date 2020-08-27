@@ -1,7 +1,7 @@
 # core/serializers.py
 
 from rest_framework import serializers
-from .models import Recipe, PlatinumLineup, SilverLineup
+from .models import Recipe, PlatinumLineup, GoldLineup, SilverLineup, BronzeLineup, SlateSunMon
 class RecipeSerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -14,8 +14,26 @@ class PlatinumLineupSerializer(serializers.ModelSerializer):
         model = PlatinumLineup
         fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
 
+class GoldLineupSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = GoldLineup
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+
 class SilverLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SilverLineup
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+
+class BronzeLineupSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = BronzeLineup
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+
+class SlateSunMonSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = SlateSunMon
         fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
