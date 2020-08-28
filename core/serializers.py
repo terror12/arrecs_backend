@@ -12,28 +12,28 @@ class PlatinumLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PlatinumLineup
-        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'stdev', 'pk')
 
 class GoldLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GoldLineup
-        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'stdev', 'pk')
 
 class SilverLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SilverLineup
-        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'stdev', 'pk')
 
 class BronzeLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = BronzeLineup
-        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'stdev', 'pk')
 
 class SlateSunMonSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SlateSunMon
-        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'std', 'pk')
+        fields = ('id', 'player', 'team', 'position', 'projection', 'salary', 'stdev', 'pk')
