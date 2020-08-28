@@ -70,7 +70,7 @@ class BronzeLineup(models.Model):
 
 class SlateSunMon(models.Model):
 
-    player = models.CharField(default='player', max_length=1000)
+    player = models.CharField(default='player', max_length=999)
     team = models.CharField(default='team', max_length=1000)
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
