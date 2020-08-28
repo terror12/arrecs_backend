@@ -27,7 +27,7 @@ class PlatinumLineup(models.Model):
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
     salary = models.CharField(default='salary', max_length=1000)
-    std = models.CharField(default='std' , max_length=1000)
+    stdev = models.CharField(default='stdev' , max_length=1000)
     
     def __str__(self):
         return self.player
@@ -39,7 +39,7 @@ class GoldLineup(models.Model):
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
     salary = models.CharField(default='salary', max_length=1000)
-    std = models.CharField(default='std' , max_length=1000)
+    stdev = models.CharField(default='stdev' , max_length=1000)
     
     def __str__(self):
         return self.player
@@ -51,7 +51,7 @@ class SilverLineup(models.Model):
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
     salary = models.CharField(default='salary', max_length=1000)
-    std = models.CharField(default='std' , max_length=1000)
+    stdev = models.CharField(default='stdev' , max_length=1000)
     
     def __str__(self):
         return self.player
@@ -63,7 +63,7 @@ class BronzeLineup(models.Model):
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
     salary = models.CharField(default='salary', max_length=1000)
-    std = models.CharField(default='std' , max_length=1000)
+    stdev = models.CharField(default='stdev' , max_length=1000)
     
     def __str__(self):
         return self.player
@@ -75,7 +75,7 @@ class SlateSunMon(models.Model):
     position = models.CharField(default='position', max_length=1000)
     projection = models.CharField(default='projection', max_length=1000)
     salary = models.CharField(default='salary', max_length=1000)
-    std = models.CharField(default='std' , max_length=1000)
+    stdev = models.CharField(default='stdev' , max_length=1000)
     
     def __str__(self):
         return self.player
