@@ -68,14 +68,6 @@ class BronzeLineup(models.Model):
     def __str__(self):
         return self.player
 
-    def salary_snippet(self):
-        self.stdev = round(self.stdev, 2)
-        return self.stdev
-
-    def projection_snippet(self):
-        self.projection = round(self.projection, 2)
-        return self.projection
-
 class SlateSunMon(models.Model):
 
     player = models.CharField(default='player', max_length=999)
